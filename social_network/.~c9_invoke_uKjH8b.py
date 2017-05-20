@@ -57,7 +57,7 @@ class CheckInPost(Post):  # Inherit properly
 
     def __str__(self):
         # '''''@Kevin Checked In: "Sample post text"\n\t-34.603722, -58.381592\n\tTuesday, Jan 10, 2017'''''
-        return ('@{} Checked In: "{}"\n\t{}, {}\n\t{}'.format(self.user.first_name, self.text, self.latitude, self.longitude, self.timestamp.strftime("%A, %b %d, %Y")))
+        return ('@{} Checked In: "{}"\n\t{}, {}\n\t{}'.format(self.ser.first_name, self.text, self.latitude, self.longitude, self.timestamp.strftime("%A, %b %d, %Y")))
 
 
         
